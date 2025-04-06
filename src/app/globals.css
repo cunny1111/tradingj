@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+  --chakra-colors-bg-surface: #ffffff;
+  --chakra-colors-text: #1a202c;
+  --chakra-colors-border-subtle: #e2e8f0;
+  --chakra-colors-bg-highlight: #edf2f7;
+  --chakra-colors-brand-600: #0066cc;
+}
+
+.dark-mode {
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 26, 32, 44;
+  --chakra-colors-bg-surface: #1a202c;
+  --chakra-colors-text: #f7fafc;
+  --chakra-colors-border-subtle: #2d3748;
+  --chakra-colors-bg-highlight: #2d3748;
+  --chakra-colors-brand-600: #4db3ff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-rgb: 26, 32, 44;
+    --chakra-colors-bg-surface: #1a202c;
+    --chakra-colors-text: #f7fafc;
+    --chakra-colors-border-subtle: #2d3748;
+    --chakra-colors-bg-highlight: #2d3748;
+    --chakra-colors-brand-600: #4db3ff;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  font-family: Arial, Helvetica, sans-serif;
+}
