@@ -34,6 +34,8 @@ TradingJ is a modern, feature-rich trading journal application designed to help 
 
 ### Installation
 
+- Either download from release or run from source codes
+
 1. Clone the repository
 ```bash
 git clone https://github.com/yourusername/tradingj.git
